@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form liên hệ</title>
+</head>
+
+<body>
+
+    <style>
+        textarea,
+        form {
+            margin-top: 15px;
+        }
+
+        td {
+            padding-top: 15px;
+
+        }
+    </style>
+    <h1>Get in touch with us by filling contact form below</h1>
+    <table>
+        <tr>
+            <td><input type="text" name="fullname" placeholder="* Enter your full name"></td>
+            <td><input type="email" name="email" placeholder="* Enter your email address"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="subject" placeholder="* Enter your subject"></td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    <textarea name="message" cols="40" rows="10" placeholder="* Your message here"></textarea>
+
+    <form action="send" method="post">
+        <input type="submit" name="send" value="Send message">
+        <caption>* Please fill all require form field, thanks!</caption>
+    </form>
+
+</body>
+
+</html>
