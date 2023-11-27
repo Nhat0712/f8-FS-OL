@@ -1,0 +1,51 @@
+#send {
+    color: aliceblue;
+    width: 12%;
+    height: 35px;
+    border: none;
+    background-color: rgb(12, 143, 152);
+}
+
+#message {
+    padding-top: 5px;
+}
+
+#message,
+input {
+    padding-left: 10px;
+    border: 1px solid darkgrey;
+}
+
+.col-contact {
+    width: 30%;
+}
+
+.box-information {
+    position: relative;
+}
+
+.col-contact,
+.col-appointment,
+td {
+    padding-bottom: 15px;
+}
+
+.col-contact,
+.col-appointment {
+    font-size: 28px;
+}
+
+.information {
+    color: darkgray;
+    position: absolute;
+    top: 0;
+}
+
+.heading {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.box-boss {
+    padding: 40px;
+}

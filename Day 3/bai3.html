@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Access Manager</title>
+    <style>
+        .employment-label label {
+            display: inline-block;
+            vertical-align: top;
+            /* Để label và input căn cạnh nhau */
+        }
+
+        .employment-label label::after {
+            content: "\A";
+            white-space: pre;
+        }
+
+        .input-radio,
+        .input-checkbox {
+            display: block;
+        }
+
+        td.col-value {
+            width: 8%;
+        }
+
+        tr td {
+            padding-bottom: 5px;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+        <table>
+            <tr>
+                <td class="col-value"><label for="usename">Use name:</label></td>
+                <td><label><input type="text" id="usename" name="usename" required></label></td>
+            </tr>
+            <tr>
+                <td class="col-value"><label for="password">Pass word:</label></td>
+                <td><label><input type="password" id="password" name="password" required></label></td>
+            </tr>
+            <tr>
+                <td class="col-value"><label for="city">
+                        City of Employment:
+                    </label></td>
+                <td><label><input type="text" id="city" name="city" required></label></td>
+            </tr>
+            <tr>
+                <td class="col-value"><label for="web-server">web server:</label></td>
+                <td><label><select name="server" id="web-server">
+                            <option value="">--Choose an server--</option>
+                            <option value="Vietnamese">Vietnamese</option>
+                            <option value="American">American</option>
+                        </select></label></td>
+            </tr>
+            <tr>
+                <td class="col-value"><label>
+                        Please specify your role:
+                    </label></td>
+                <td>
+                    <label class="input-radio"><input type="radio" name="type-role">Admin</label>
+                    <label class="input-radio"><input type="radio" name="type-role">Engineer</label>
+                    <label class="input-radio"><input type="radio" name="type-role">Manager</label>
+                    <label class="input-radio"><input type="radio" name="type-role">Guest</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-value"><label>
+                        Single Sign-on to the following:
+                    </label></td>
+                <td>
+                    <label class="input-checkbox"><input type="checkbox" name="sign-on">Mail</label>
+                    <label class="input-checkbox"><input type="checkbox" name="sign-on">Payroll</label>
+                    <label class="input-checkbox"><input type="checkbox" name="sign-on">Self-service</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <label><input type="submit" value="Login"></label>
+                    <label><input type="reset" value="Reset"></label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
