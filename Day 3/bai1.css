@@ -30,10 +30,6 @@ td {
     padding-bottom: 15px;
 }
 
-.col-contact,
-.col-appointment {
-    font-size: 28px;
-}
 
 .information {
     color: darkgray;
@@ -48,4 +44,13 @@ td {
 
 .box-boss {
     padding: 40px;
+}
+
+input,
+textarea {
+    width: 80%;
+}
+
+textarea {
+    height: 200px;
 }
