@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đặt bàn</title>
+    <style>
+        @font-face {
+            font-family: "Alfa Slab One";
+            src: url(../fonts/AlfaSlabOne-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: "BebasNeue";
+            src: url(../fonts/BebasNeue-Regular.ttf);
+        }
+
+        .content-center {
+            text-align: center;
+
+        }
+
+        body {
+            color: rgb(53, 4, 4);
+        }
+
+        input,
+        button {
+            border: 1px solid gainsboro;
+            box-sizing: border-box;
+            width: 300px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        input {
+            padding-left: 10px;
+        }
+
+        button.infor {
+            background-color: brown;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        input::placeholder {
+            font-weight: bold;
+            color: black;
+        }
+
+        h1.content-center,
+        button.infor {
+            font-family: "Alfa Slab One";
+        }
+
+        h3.content-center,
+        input.infor {
+            font-family: "BebasNeue";
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h3 class="content-center">RESERVATION</h3>
+        <h1 class="content-center">BOOK YOUR TABLE</h1>
+    </div>
+    <div class="fill-infor">
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+
+            <div class="fill  content-center">
+                <input class="infor" type="text" name="name" placeholder="NAME" required>
+                <input class="infor" type="email" name="email" placeholder="EMAIL" required>
+            </div>
+
+            <div class="fill  content-center">
+                <input class="infor" type="text" name="date" placeholder="DATE" required>
+                <input class="infor" type="text" name="time" placeholder="TIME" required>
+            </div>
+
+            <div class="fill  content-center">
+                <input class="infor" type="text" name="people" placeholder="PEOPLE" required>
+                <button class="infor">Find A Table</button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
