@@ -34,15 +34,60 @@
 .product {
     text-align: center;
     margin-right: 40px;
+    position: relative;
+}
+
+.action {
+    position: absolute;
+    top: 90px;
+
 }
 
 .rating {
     margin-top: 30px;
 }
 
+/* phần ẩn */
+.product .img2 {
+    display: none;
+}
+
+.icon i {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(0, 38, 128);
+    display: none;
+}
+
+.btn-hover button {
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 25px;
+    color: #fff;
+    background-color: rgb(0, 38, 128);
+    border: none;
+    display: none;
+}
+
+/* phần hiện */
+
+.img1:hover~.div-hover .action div.icon i,
+.img1:hover~.div-hover .img2,
+.img1:hover~.div-hover .action .btn-hover button {
+    display: block;
+}
+
+.img1:hover {
+    display: none;
+}
+
+
 img {
     width: 200px;
-
 }
 
 body {
