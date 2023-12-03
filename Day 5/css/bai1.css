@@ -1,0 +1,160 @@
+    body {
+        margin: 20px 30px;
+        font-family: body;
+        font-weight: 700;
+    }
+
+    /* --------Tạo font cho tiêu đề ------*/
+    @font-face {
+        font-family: heading;
+        src: url(../fonts/Lobster-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: body;
+        src: url(../fonts/Lato-Light.ttf);
+    }
+
+    .heading h1 {
+        font-family: heading;
+        font-weight: 400;
+    }
+
+
+    /* -------tạo định dạng cho 1 dòng form -------*/
+    .row {
+        box-sizing: border-box;
+        display: flex;
+        height: 40px;
+        width: 400px;
+        align-items: center;
+        position: relative;
+        border: 2px solid rgb(207, 207, 207);
+    }
+
+    /*--------- định dạng khi hover vào dòng form ------*/
+    .icon-user {
+        color: #fff;
+        padding: 10px;
+        border: none;
+        background-color: rgb(207, 207, 207);
+        position: absolute;
+        left: -1px;
+    }
+
+    .input-name {
+
+        margin: 0;
+        color: rgb(207, 207, 207);
+        padding: 10px 35px 10px 40px;
+        border: none;
+        box-sizing: border-box;
+        width: 400px;
+    }
+
+    .input-name::placeholder {
+        color: rgb(207, 207, 207);
+    }
+
+    .icon-star {
+        font-size: 10px;
+        color: rgb(207, 207, 207);
+        padding: 10px;
+        border: none;
+        position: absolute;
+        right: 0;
+    }
+
+    .icon-x {
+        border: none;
+    }
+
+    .icon-x .fa-x {
+        font-size: 7px;
+        color: rgb(207, 207, 207);
+        padding: 10px;
+        border: none;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        display: none;
+    }
+
+    /*--------- định dạng active ---------*/
+    .input-name:active {
+        border: 1px solid black;
+    }
+
+    .row:active .input-name {
+        border: px solid black;
+        margin: 0;
+    }
+
+    .row:active .icon-user {
+        background-color: black;
+    }
+
+    .row:active .icon-star {
+        display: none;
+    }
+
+    .row:active .icon-x .fa-x {
+        display: block;
+    }
+
+    .row:active .box-message {
+        display: block;
+    }
+
+    /*--------- định dạng focus --------*/
+
+    .input-name:focus {
+        border: 0;
+    }
+
+    .input-name:focus~.icon-user {
+        background-color: black;
+    }
+
+    .input-name:focus~.icon-star {
+        display: none;
+    }
+
+    .input-name:focus~.icon-x {
+        display: block;
+    }
+
+    .input-name:focus~.box-message {
+        display: block;
+    }
+
+
+    /* Tạo box ẩn (box-message) */
+    .box-message {
+        box-sizing: border-box;
+        color: #fff;
+        width: 120px;
+        background-color: black;
+        position: absolute;
+        top: -50px;
+        left: 20px;
+        display: none;
+    }
+
+    .box-message .box {
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 10px solid rgb(0, 0, 0);
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+
+    }
