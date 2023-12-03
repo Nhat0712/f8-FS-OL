@@ -23,24 +23,56 @@
             contact form or directly via phone, we love to chat
         </p>
     </div>
-    <div class="infor">
-        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
 
-            <div class="row">
-                <div class="box-message">
-                    <div class="box">
-                        Enter your name
-                        <div class="triangle"></div>
-                    </div>
+        <!-- dòng 1 -->
 
+        <div class="row">
+            <input class="input-name" type="text" name="name" id="name" placeholder="Your name">
+            <div class="box-message">
+                <div class="box">
+                    Enter your name
+                    <div class="triangle"></div>
                 </div>
-                <input class="input-name" type="text" name="name" id="name" placeholder="Your name">
-                <label class="icon-user" for="name"><i class="fa-solid fa-user"></i></label>
-                <span class="icon-star">★</span>
-                <span class="icon-x"><i class="fa-solid fa-x"></i></span>
             </div>
-        </form>
-    </div>
+            <span class="icon-first"><i class="fa-solid fa-user"></i></span>
+            <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
+            <span class="icon-x"><i class="fa-solid fa-x"></i></span>
+        </div>
+
+        <!-- Dòng 2 -->
+
+        <div class="row">
+            <input class="input-email" type="email" name="email" id="email" placeholder="your@domain.com">
+            <div class="box-message">
+                <div class="box">
+                    Enter your name
+                    <div class="triangle"></div>
+                </div>
+            </div>
+            <span class="icon-first"><i class="fa-solid fa-envelope"></i></span>
+            <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
+            <span class="icon-x"><i class="fa-solid fa-x"></i></span>
+        </div>
+
+        <!-- Dòng 3 -->
+
+        <div class="row">
+            <input class="input-number" type="number" name="number" id="number" placeholder="+44 00 123">
+            <div class="box-message">
+                <div class="box">
+                    Enter your name
+                    <div class="triangle"></div>
+                </div>
+            </div>
+            <span class="icon-first"><i class="fa-solid fa-mobile"></i></span>
+            <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
+            <span class="icon-x"><i class="fa-solid fa-x"></i></span>
+        </div>
+
+
+
+    </form>
 
 
 </body>
