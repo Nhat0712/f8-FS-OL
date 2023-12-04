@@ -8,12 +8,12 @@
     /* --------Tạo font cho tiêu đề ------*/
     @font-face {
         font-family: heading;
-        src: url(/fonts/Lobster-Regular.ttf);
+        src: url(./fonts/Lobster-Regular.ttf);
     }
 
     @font-face {
         font-family: body;
-        src: url(/fonts/Lato-Light.ttf);
+        src: url(./fonts/Lato-Light.ttf);
     }
 
     .heading h1 {
