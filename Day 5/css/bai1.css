@@ -23,12 +23,38 @@
 
 
     /* -------tạo định dạng cho 1 dòng form -------*/
-    .row,
+
+    .row-1,
     .row-2,
-    .row-3 {
+    .row-3,
+    .row-4,
+    .row-5,
+    .row-6 {
         width: 30%;
         position: relative;
     }
+
+    .row-2 {
+        top: 60px;
+    }
+
+    .row-3 {
+        top: 120px;
+    }
+
+    .row-4 {
+        top: 180px;
+    }
+
+    .row-5 {
+        top: 240px;
+    }
+
+    .row-6 {
+        top: 430px;
+    }
+
+    /* ---icon-first--- */
 
     .icon-first {
         text-align: center;
@@ -42,16 +68,52 @@
         left: 0;
     }
 
-    .input-name {
+    /* ---input--- */
+
+    .input-name,
+    .input-email,
+    .input-number,
+    .input-subject,
+    .input-message {
         padding: 11px 0 11px 45px;
         width: 75%;
         border: 2px solid rgb(196, 196, 196);
         position: absolute;
     }
 
-    .input-name::placeholder {
+    .input-name::placeholder,
+    .input-email::placeholder,
+    .input-number::placeholder,
+    .input-subject::placeholder,
+    .input-message::placeholder {
         color: rgb(196, 196, 196);
     }
+
+    /* label */
+    label {
+        color: rgb(196, 196, 196);
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .input-check {
+        color: rgb(196, 196, 196);
+    }
+
+
+    /* nút SEND */
+    button {
+        color: #fff;
+        font-size: 12px;
+        padding: 6px 25px;
+        border: none;
+        background-color: rgb(171, 35, 35);
+        position: absolute;
+        right: 60px;
+    }
+
+    /* ---icon-star--- */
 
     .icon-last {
         text-align: center;
@@ -63,6 +125,8 @@
         top: 3px;
         right: 62px;
     }
+
+    /* ---icon-x--- */
 
     .icon-x {
         text-align: center;
@@ -107,26 +171,85 @@
 
     }
 
-    /* focus và active row */
+    /* -----focus và active row, hover----- */
+    /* input-name */
     .input-name:active,
-    .input-name:focus {
-        border: black;
+    .input-name:focus,
+    .input-name:hover,
+    /* input-email */
+    .input-email:active,
+    .input-email:focus,
+    .input-email:hover,
+    /* input-number */
+    .input-number:active,
+    .input-number:focus,
+    .input-number:hover,
+    /* input-value */
+    .input-subject:active,
+    .input-subject:focus,
+    .input-subject:hover,
+    /* input-message */
+    .input-message:active,
+    .input-message:focus,
+    .input-message:hover {
+
+        border: 1px solid black;
     }
 
+    /* icon-first */
+
     .input-name:active~.icon-first,
-    .input-name:focus~.icon-first {
-        border: black;
+    .input-name:focus~.icon-first,
+    .input-name:hover~.icon-first,
+    .input-email:active~.icon-first,
+    .input-email:focus~.icon-first,
+    .input-email:hover~.icon-first,
+    .input-number:active~.icon-first,
+    .input-number:focus~.icon-first,
+    .input-number:hover~.icon-first,
+    .input-subject:active~.icon-first,
+    .input-subject:focus~.icon-first,
+    .input-subject:hover~.icon-first,
+    .input-message:active~.icon-first,
+    .input-message:focus~.icon-first,
+    .input-message:hover~.icon-first {
+        border: 1px solid black;
         background-color: black;
     }
 
+    /* icon-star */
+
     .input-name:active~.icon-last,
-    .input-name:focus~.icon-last {
+    .input-name:focus~.icon-last,
+    .input-email:active~.icon-last,
+    .input-email:focus~.icon-last,
+    .input-number:active~.icon-last,
+    .input-number:focus~.icon-last,
+    .input-message:active~.icon-last,
+    .input-message:focus~.icon-last {
         display: none;
     }
+
+    /* icon-x và box ẩn */
 
     .input-name:active~.box-message,
     .input-name:focus~.box-message,
     .input-name:active~.icon-x,
-    .input-name:focus~.icon-x {
+    .input-name:focus~.icon-x,
+    .input-email:active~.box-message,
+    .input-email:focus~.box-message,
+    .input-email:active~.icon-x,
+    .input-email:focus~.icon-x,
+    .input-number:active~.box-message,
+    .input-number:focus~.box-message,
+    .input-number:active~.icon-x,
+    .input-number:focus~.icon-x,
+    /* dòng subject */
+    .input-subject:active~.box-message,
+    .input-subject:focus~.box-message,
+    .input-message:active~.box-message,
+    .input-message:focus~.box-message,
+    .input-message:active~.icon-x,
+    .input-message:focus~.icon-x {
         display: block;
     }

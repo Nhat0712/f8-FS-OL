@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c5c59bb92a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Day 5/css/bai1.css">
-    <title>Hey There</title>
+    <title>Bài tập 1</title>
     <style>
 
     </style>
@@ -17,59 +17,103 @@
     <div class="heading">
         <h1>Hey there</h1>
         <p>
-            <span style="color:rgb(230, 14, 14) ;">We'd like to hear from you.</span>Send us you message or just say hy
-            with
-            our<br>
-            contact form or directly via phone, we love to chat
+            <span style="color:rgb(230, 14, 14) ;">We'd like to hear from you.</span>Send us you message or just say
+            hy<br>
+            with our contact form or directly via phone, we love to chat
         </p>
     </div>
     <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
-
-        <!-- dòng 1 -->
-
         <div class="row">
-            <input class="input-name" type="text" name="name" id="name" placeholder="Your name">
-            <div class="box-message">
-                <div class="box">
-                    Enter your name
-                    <div class="triangle"></div>
+            <!-- dòng name -->
+
+            <div class="row-1">
+                <input class="input-name" type="text" name="name" id="name" placeholder="Your name">
+                <div class="box-message">
+                    <div class="box">
+                        Enter your name
+                        <div class="triangle"></div>
+                    </div>
                 </div>
+                <span class="icon-first"><i class="fa-solid fa-user"></i></span>
+                <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
+                <span class="icon-x"><i class="fa-solid fa-x"></i></span>
             </div>
-            <span class="icon-first"><i class="fa-solid fa-user"></i></span>
-            <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
-            <span class="icon-x"><i class="fa-solid fa-x"></i></span>
+        </div>
+        <!-- Dòng email -->
+        <div class="row">
+            <div class="row-2">
+                <input class="input-email" type="email" name="email" id="email" placeholder="your@domain.com">
+                <div class="box-message">
+                    <div class="box">
+                        Enter your email
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+                <span class="icon-first"><i class="fa-solid fa-envelope"></i></span>
+                <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
+                <span class="icon-x"><i class="fa-solid fa-x"></i></span>
+            </div>
+        </div>
+        <!-- Dòng number -->
+        <div class="row">
+            <div class="row-3">
+                <input class="input-number" type="text" name="number" id="number" placeholder="+44 00 123">
+                <div class="box-message">
+                    <div class="box">
+                        Enter your number
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+                <span class="icon-first"><i class="fa-solid fa-mobile"></i></span>
+                <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
+                <span class="icon-x"><i class="fa-solid fa-x"></i></span>
+            </div>
         </div>
 
-        <!-- Dòng 2 -->
+        <!-- Dòng select  -->
 
         <div class="row">
-            <input class="input-email" type="email" name="email" id="email" placeholder="your@domain.com">
-            <div class="box-message">
-                <div class="box">
-                    Enter your name
-                    <div class="triangle"></div>
+            <div class="row-4">
+                <input class="input-subject" type="text" name="number" id="number" placeholder="Subject">
+                <div class="box-message">
+                    <div class="box">
+                        Enter your subject
+                        <div class="triangle"></div>
+                    </div>
                 </div>
+                <span class="icon-first"><i class="fa-solid fa-book"></i></span>
+                <span class="icon-last"><i class="fa-solid fa-up-down"></i></span>
+                <span class="icon-x"><i class="fa-solid fa-x"></i></span>
             </div>
-            <span class="icon-first"><i class="fa-solid fa-envelope"></i></span>
-            <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
-            <span class="icon-x"><i class="fa-solid fa-x"></i></span>
         </div>
 
-        <!-- Dòng 3 -->
+        <!-- Dòng textarea  -->
 
         <div class="row">
-            <input class="input-number" type="number" name="number" id="number" placeholder="+44 00 123">
-            <div class="box-message">
-                <div class="box">
-                    Enter your name
-                    <div class="triangle"></div>
+            <div class="row-5">
+                <textarea class="input-message" name="textarea" id="textarea" cols="30" placeholder="Message"
+                    style="height: 147px;"></textarea>
+                <div class="box-message">
+                    <div class="box">
+                        Enter your message
+                        <div class="triangle"></div>
+                    </div>
                 </div>
+                <span class="icon-first" style="height: 150px;"><i
+                        class="fa-solid fa-message fa-flip-horizontal"></i></span>
+                <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
+                <span class="icon-x"><i class="fa-solid fa-x"></i></span>
             </div>
-            <span class="icon-first"><i class="fa-solid fa-mobile"></i></span>
-            <span class="icon-last"><i class="fa-sharp fa-solid fa-star"></i></span>
-            <span class="icon-x"><i class="fa-solid fa-x"></i></span>
         </div>
 
+        <!-- Dòng last  -->
+
+        <div class="row">
+            <div class="row-6">
+                <label><input class="input-check" type="checkbox">Send me a copy of this message</label>
+                <button class="send">SEND</button>
+            </div>
+        </div>
 
 
     </form>
