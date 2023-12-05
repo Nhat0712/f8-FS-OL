@@ -1,42 +1,57 @@
-/* CSS question 1 */
-.ques-one {
-    background-color: orange;
-    width: 100%;
-    height: 36px;
-    position: relative;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.icon-close,
-.icon-open {
-    background-color: orange;
-    padding: 10px;
-    border: none;
-    position: absolute;
-    top: 0px;
-    left: 0;
-}
-
-.icon-open {
-    display: none;
+.information {
+  width: 100%;
+  height: 600px;
+  padding: 10px;
 }
 
 .ques {
-    position: absolute;
-    top: -8px;
-    left: 35px;
+  margin-bottom: 10px;
+}
+
+.box {
+  color: #fff;
+  background-color: #d95925;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.icon-open {
+  padding: 10px;
+}
+
+.icon-close {
+  padding: 10px;
+  display: none;
 }
 
 .answer {
-    position: absolute;
-    top: 35px;
-    left: 10px;
-    display: none;
-
+  display: none;
+  font-size: 15px;
+  padding-left: 15px;
 }
 
-/* focus button */
+input[id="question-1"]:checked ~ .answer,
+input[id="question-2"]:checked ~ .answer,
+input[id="question-3"]:checked ~ .answer {
+  display: inline-block;
+}
 
-.icon-close:focus~.icon-open,
-.icon-close:focus~.answer {
-    display: block;
+input[id="question-1"]:checked ~ label .icon-open,
+input[id="question-2"]:checked ~ label .icon-open,
+input[id="question-3"]:checked ~ label .icon-open {
+  display: none;
+}
+
+input[id="question-1"]:checked ~ label .icon-close,
+input[id="question-2"]:checked ~ label .icon-close,
+input[id="question-3"]:checked ~ label .icon-close {
+  display: inline;
 }
