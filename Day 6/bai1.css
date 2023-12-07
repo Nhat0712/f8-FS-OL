@@ -1,7 +1,15 @@
+html {
+  font-family: san;
+}
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: san;
+  src: url(./fonts/static/OpenSans-Light.ttf);
 }
 
 .tools {
@@ -50,12 +58,12 @@ label {
 /* CSS icon */
 
 .icon:not(:nth-child(1)) {
-  color: rgb(84, 84, 84);
+  color: #666;
   padding-right: 5px;
 }
 
 .ic-down {
-  color: rgb(84, 84, 84);
+  color: #666;
   font-size: 10px;
 }
 .ic-check {
@@ -88,10 +96,10 @@ label {
 .box > div:not(:nth-child(4)) {
   border-bottom: 1px solid rgb(211, 211, 211);
   padding: 10px 0 0 30px;
-  font-size: 15px;
+  font-size: 13px;
   text-align: left;
   height: 40px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .triangle {
@@ -107,17 +115,18 @@ label {
 
 /* CSS hover, focus */
 
+/* hover các div */
 .home:hover,
+.blog:hover,
+.contact:hover,
 .about-us:hover > .tool,
 .news:hover > .tool,
 .portfolio:hover > .tool,
-.blog:hover,
-.contact:hover,
 .about-us:hover .tool .ic-down,
 .news:hover .tool .ic-down,
 .portfolio:hover .tool .ic-down {
   color: #fff;
-  background-color: rgb(27, 175, 219);
+  background-color: #2da5da;
 }
 
 input[id="us"]:checked ~ .tool,
@@ -127,9 +136,10 @@ input[id="us"]:checked ~ .tool .ic-down,
 input[id="news"]:checked ~ .tool .ic-down,
 input[id="portfolio"]:checked ~ .tool .ic-down {
   color: #fff;
-  background-color: rgb(27, 175, 219);
+  background-color: #2da5da;
 }
 
+/* hiện box ẩn */
 input[id="us"]:checked ~ .box-hidden-about,
 input[id="news"]:checked ~ .box-hidden-news,
 input[id="portfolio"]:checked ~ .box-hidden-portfolio {

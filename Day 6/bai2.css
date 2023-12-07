@@ -1,0 +1,148 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ebf5fe;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: robotolight;
+  src: url(./fonts/Roboto-Light.ttf);
+}
+/* ---vỏ hộp--- */
+.big-box {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 5% 10%;
+  background-color: #ebf5fe;
+  text-align: center;
+}
+
+.box {
+  color: #fff;
+  width: 280px;
+  height: 180px;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+/* ---child of the box--- */
+
+tr,
+th {
+  color: black;
+  padding: 2px 0 0 5px;
+  border: none;
+  text-align: left;
+}
+
+/* CSS icon */
+.icon {
+  color: #fff;
+  font-size: 25px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.paintbrush {
+  background-color: rgb(248, 78, 78);
+  box-shadow: 0 0 15px 1px rgb(248, 78, 78);
+  padding: 10px;
+}
+.table {
+  background-color: rgb(3, 134, 3);
+  box-shadow: 0 0 15px 1px rgb(3, 134, 3);
+  padding: 10px 11px;
+}
+
+.lightning {
+  background-color: rgb(253, 187, 65);
+  box-shadow: 0 0 15px 1px rgb(253, 187, 65);
+  padding: 9px 12px;
+}
+
+.rocket {
+  background-color: rgb(60, 149, 216);
+  box-shadow: 0 0 15px 1px rgb(60, 149, 216);
+  padding: 10px 12px;
+}
+
+.layer {
+  background-color: rgb(162, 0, 162);
+  box-shadow: 0 0 15px 1px rgb(162, 0, 162);
+  padding: 10px;
+}
+
+.email {
+  background-color: rgb(116, 192, 3);
+  box-shadow: 0 0 15px 1px rgb(116, 192, 3);
+  padding: 10px 11px;
+}
+
+/* sử lý hover */
+
+.box.unique:hover {
+  border: 2px solid rgb(248, 78, 78);
+}
+
+.box.theme:hover {
+  border: 2px solid rgb(3, 134, 3);
+}
+
+.box.digital:hover {
+  border: 2px solid rgb(253, 187, 65);
+}
+
+.box.website:hover {
+  border: 2px solid rgb(60, 149, 216);
+}
+
+.box.responsive:hover {
+  border: 2px solid rgb(162, 0, 162);
+}
+
+.box.quick:hover {
+  border: 2px solid rgb(116, 192, 3);
+}
+
+span.head-small {
+  font-size: 20px;
+  padding: 10px;
+  font-family: roboto;
+}
+
+/* đoạn văn */
+.paragraph {
+  font-size: 15px;
+  color: #666666;
+  text-align: left;
+  font-family: robotolight;
+  line-height: 23px;
+}
+
+/* button */
+
+.btn {
+  text-align: left;
+}
+
+button {
+  background-color: #fff;
+  color: rgb(54, 114, 218);
+  border: none;
+  position: relative;
+  left: -5px;
+  font-weight: bold;
+}
