@@ -2,6 +2,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: nunito;
 }
 
 @font-face {
@@ -10,13 +11,12 @@ html {
 }
 .big-box {
   width: 100%;
-  height: 1000px;
+  height: 950px;
   background-image: url("http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  font-family: nunito;
 }
 
 .box-title {
@@ -171,6 +171,6 @@ a.fg-pass {
   padding: 8px 12px;
   position: relative;
   box-shadow: 10px 0 15px rgb(205, 204, 204);
-  top: -230px;
+  top: -210px;
   left: -38px;
 }
