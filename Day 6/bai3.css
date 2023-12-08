@@ -1,0 +1,167 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.big-box {
+  width: 100%;
+  height: 1000px;
+  background-image: url("http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-title {
+  text-align: center;
+  width: 60%;
+  height: 400px;
+  border-radius: 10px;
+  position: fixed;
+  top: 25%;
+  left: 20%;
+  display: block;
+}
+
+/* CSS box con trái */
+.information {
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  text-align: center;
+  background-color: #ff574d;
+}
+.head-information {
+  padding-top: 48px;
+  color: #fff;
+}
+
+#special-left {
+  color: #ff574d;
+  background-color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.paragraph {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.btn .btn-read {
+  color: #ff574d;
+  width: 130px;
+  height: 33px;
+  padding: 10xp;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.icon span {
+  display: inline-block;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(180, 104, 101, 0.683);
+  padding: 8px 3px 0 3px;
+  border-radius: 3px;
+  line-height: 23px;
+}
+
+/* CSS box con phải */
+
+.log-in {
+  width: 360px;
+  height: 400px;
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  left: -5px;
+}
+
+form {
+  display: inline-block;
+}
+
+#special-right {
+  color: #ff574d;
+}
+
+hr {
+  background-color: #ff574d;
+  width: 48px;
+  height: 1px;
+  border: none;
+  position: relative;
+  top: -5px;
+}
+
+input#email,
+input#password {
+  color: grey;
+  width: 70%;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 1px solid rgb(255, 254, 254);
+  display: inline-block;
+  box-shadow: 0 0 3px 1px rgb(229, 229, 229);
+}
+
+/* input check */
+
+.input-check {
+  margin: 20px;
+}
+
+input#remember {
+  position: relative;
+  left: -30px;
+}
+
+label.lb-re {
+  color: rgb(65, 65, 65);
+  position: relative;
+  left: -35px;
+  bottom: 2px;
+}
+
+a.fg-pass {
+  color: rgb(65, 65, 65);
+  text-decoration: none;
+  position: relative;
+  right: -29px;
+  bottom: 3px;
+}
+
+.btn-login {
+  width: 78%;
+  height: 40px;
+  color: #fff;
+  background-color: #ff574d;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.dont-acc {
+  display: inline-block;
+  color: rgb(65, 65, 65);
+  text-decoration: none;
+}
+
+/* CSS arrow */
+.arrow {
+  color: #ff574d;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 12px;
+  position: relative;
+  box-shadow: 10px 0 15px rgb(205, 204, 204);
+  top: -230px;
+  left: -60px;
+}
