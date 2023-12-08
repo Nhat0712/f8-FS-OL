@@ -3,6 +3,11 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: nunito;
+  src: url(./fonts/static/NunitoSans_10pt-ExtraLight.ttf);
+}
 .big-box {
   width: 100%;
   height: 1000px;
@@ -11,6 +16,7 @@ html {
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
+  font-family: nunito;
 }
 
 .box-title {
@@ -27,7 +33,7 @@ html {
 /* CSS box con trái */
 .information {
   display: inline-block;
-  width: 250px;
+  width: 290px;
   height: 400px;
   text-align: center;
   background-color: #ff574d;
@@ -119,21 +125,23 @@ input#password {
 
 input#remember {
   position: relative;
-  left: -30px;
+  left: -38px;
 }
 
 label.lb-re {
+  font-size: 13px;
   color: rgb(65, 65, 65);
   position: relative;
-  left: -35px;
+  left: -38px;
   bottom: 2px;
 }
 
 a.fg-pass {
+  font-size: 13px;
   color: rgb(65, 65, 65);
   text-decoration: none;
   position: relative;
-  right: -29px;
+  right: -35px;
   bottom: 3px;
 }
 
@@ -144,10 +152,11 @@ a.fg-pass {
   background-color: #ff574d;
   border: none;
   border-radius: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .dont-acc {
+  font-size: 13px;
   display: inline-block;
   color: rgb(65, 65, 65);
   text-decoration: none;
@@ -159,9 +168,9 @@ a.fg-pass {
   background-color: #fff;
   border: none;
   border-radius: 50%;
-  padding: 10px 12px;
+  padding: 8px 12px;
   position: relative;
   box-shadow: 10px 0 15px rgb(205, 204, 204);
   top: -230px;
-  left: -60px;
+  left: -38px;
 }
