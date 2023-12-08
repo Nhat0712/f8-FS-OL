@@ -39,7 +39,6 @@ body {
 
 .contact {
   color: grey;
-
   height: 60px;
   border-top: 0;
   border-bottom: 0;
@@ -49,6 +48,10 @@ body {
   right: 0;
   text-align: center;
   line-height: 60px;
+}
+
+label.tool {
+  margin: 0 5px;
 }
 
 label {
@@ -116,12 +119,15 @@ label {
 /* CSS hover, focus */
 
 /* hover các div */
-.home:hover,
-.blog:hover,
-.contact:hover,
-.about-us:hover > .tool,
-.news:hover > .tool,
-.portfolio:hover > .tool,
+.home:hover .tool,
+.blog:hover .tool,
+.contact:hover .tool,
+.about-us:hover:not(:nth-child(2)) .tool,
+.news:hover:not(:nth-child(2)) .tool,
+.portfolio:hover:not(:nth-child(2)) .tool,
+.about-us:hover .tool,
+.news:hover .tool,
+.portfolio:hover .tool,
 .about-us:hover .tool .ic-down,
 .news:hover .tool .ic-down,
 .portfolio:hover .tool .ic-down {
