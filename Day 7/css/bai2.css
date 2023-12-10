@@ -11,9 +11,9 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.358);
   font-family: Asap;
   width: 100%;
+  background-color: rgba(125, 125, 125, 0.356);
   background-image: url("https://ircdn.vingroup.net/storage/public/2019/07/DJI_0038-(fixed2)-banner-20190727T100420091234.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
