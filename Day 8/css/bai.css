@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: ManropeRegular;
+  src: url(../font/Manrope-Regular.ttf);
+}
+
+@font-face {
+  font-family: ManropeBold;
+  src: url(../font/Manrope-Bold.ttf);
+}
+
+@font-face {
+  font-family: ManropeExtraBold;
+  src: url(../font/Manrope-ExtraBold.ttf);
+}
+
+/* reset <a> */
+a {
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+}
+
+/* css thanh header */
+.head {
+  width: 100%;
+  height: 80px;
+  color: rgb(59, 59, 59);
+  background-color: rgb(232, 232, 232);
+  padding: 15px;
+}
+
+/*  css logo sand-box */
+.logo {
+  width: 150px;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.logo {
+  color: black;
+  font-size: 30px;
+  font-family: ManropeExtraBold;
+}
+
+.ic-logo {
+  position: relative;
+}
+
+.ic-hex {
+  transform: rotate(90deg);
+  position: relative;
+  left: -9px;
+  bottom: -5px;
+}
+
+.ic-cube {
+  font-size: 1px;
+  position: absolute;
+  top: 13px;
+  left: -9px;
+}
+
+.word-x {
+  position: relative;
+  left: -18px;
+}
+
+/* CSS choose  */
+.choose {
+  width: 750px;
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  font-family: ManropeRegular;
+  font-weight: 900;
+}
+
+.option {
+  margin-right: 25px;
+}
+
+.other {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 20px;
+  margin-right: 10px;
+}
+
+.down {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  left: -3px;
+}
+
+/* css list hidden */
+.list {
+  color: rgb(59, 59, 59);
+  width: 1400px;
+  height: 500px;
+  display: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 55px;
+  left: -685px;
+  line-height: 40px;
+  z-index: 1;
+}
+
+/* css list left*/
+
+.col-left {
+  width: 420px;
+  height: 400px;
+  padding: 0 20px 20px;
+  border-right: 1px solid rgb(200, 200, 200);
+  display: inline-table;
+}
+.col-right {
+  width: 900px;
+  height: 400px;
+  padding: 0 20px 20px;
+  display: inline-table;
+}
+a {
+  display: block;
+}
+
+.one-one,
+.one-two,
+.two-one,
+.two-two,
+.head-one-left,
+.head-two-left,
+.col-one-right,
+.col-two-right,
+.col-three-right {
+  display: inline-block;
+}
+
+.head-one-left,
+.head-two-left {
+  margin-top: 40px;
+}
+
+.head-right {
+  display: block;
+}
+
+.head-right,
+.one-one,
+.two-one,
+.head-one-left,
+.head-two-left {
+  padding-left: 20px;
+  margin-right: 160px;
+}
+
+.col-one-right,
+.col-two-right {
+  padding-left: 20px;
+  margin-right: 210px;
+}
+
+/* css ẩn hiện list hidden */
+.lb {
+  color: grey;
+}
+
+input[id="documentation"]:checked ~ .lb {
+  color: red;
+  background-color: red;
+}
+
+input[id="documentation"]:checked ~ .list {
+  display: block;
+}
+
+/* backgroup */
+.backgr {
+  outline: 0;
+  font-size: 0;
+}
+.background-left {
+  width: 9%;
+  height: 600px;
+  background-color: rgb(232, 232, 232);
+  display: inline-table;
+}
+.backgroupd-right {
+  background-image: url("https://www.ntsa-net.org/sites/ntsa-net.org/files/Pointing%20at%20Figures.jpg");
+  width: 91%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: inline-table;
+}
