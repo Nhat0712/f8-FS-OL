@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-family: InterBold;
+  padding: 20px 0;
+}
+
+.para-head {
+  font-family: Inter;
+  color: rgb(77, 77, 77);
+  padding-bottom: 20px;
+}
+
+/* box chứa btn giả  */
+.box-btn {
+  width: 50%;
+  height: 500px;
+  margin-left: 25%;
+  position: relative;
+}
+
+/* các phần nhập */
+.box-first-name {
+  background-color: #fff;
+  font-family: Inter;
+  color: rgb(77, 77, 77);
+  width: 45%;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-left: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box-last-name {
+  background-color: #fff;
+  font-family: Inter;
+  color: rgb(77, 77, 77);
+  width: 45%;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box-email {
+  background-color: #fff;
+  font-family: Inter;
+  color: rgb(77, 77, 77);
+  width: 45%;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-left: 20px;
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+
+.box-sales {
+  background-color: #fff;
+  font-family: Inter;
+  color: rgb(77, 77, 77);
+  width: 45%;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-right: 20px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+}
+
+.box-message {
+  background-color: #fff;
+  font-family: Inter;
+  color: rgb(77, 77, 77);
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-left: 20px;
+  position: absolute;
+  top: 170px;
+  left: 0;
+}
+
+#selecter {
+  background-color: #fff;
+  font-family: Inter;
+  color: grey;
+  font-size: 18px;
+  width: 95%;
+  height: 50px;
+  border: none;
+  transition: all 0.1s ease;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.para-btn {
+  color: grey;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  z-index: 1;
+}
+
+/* phần input */
+#first-name,
+#last-name,
+#email {
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  transition: all 0.1s ease;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+
+#select option {
+  color: aqua;
+}
+
+#first-name:focus,
+#last-name:focus,
+#email:focus,
+#selecter:focus,
+#message {
+  border: none;
+  outline: 0;
+}
+
+/* focus */
+.box-first-name:focus-within .para-btn,
+.box-last-name:focus-within .para-btn,
+.box-email:focus-within .para-btn,
+.box-message:focus-within .para-btn {
+  font-size: 15px;
+  top: 5px;
+}
+
+.box-first-name:focus-within #first-name,
+.box-last-name:focus-within #last-name,
+.box-email:focus-within #email {
+  width: 90%;
+  height: 20px;
+  top: 25px;
+  left: 15px;
+}
+/* btn send */
+
+.send {
+  color: #fff;
+  background-color: rgb(35, 118, 186);
+  font-size: 15px;
+  font-family: Inter;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  top: 360px;
+}
