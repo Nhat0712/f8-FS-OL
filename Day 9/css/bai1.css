@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Space Grotes";
+  src: url(./fonts/SpaceGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: InterBold;
+  src: url(./fonts/Inter-Bold.ttf);
+}
+
+/* CSS info */
+.container {
+  padding-top: 30px;
+  padding-left: 200px;
+  height: 800px;
+}
+
+.container-child {
+  width: 300px;
+}
+
+.info-one {
+  width: 300px;
+  height: 190px;
+  position: relative;
+}
+
+.title {
+  font-family: "Space Grotes";
+  text-align: right;
+  padding-right: 30px;
+}
+
+.ic-time {
+  color: rgb(47, 148, 89);
+  background-color: rgba(47, 148, 89, 0.153);
+  font-size: 9px;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.time {
+  color: rgb(75, 75, 75);
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: bold;
+  padding: 6px 6px 6px 20px;
+  position: absolute;
+  top: 0px;
+  right: -120px;
+  cursor: pointer;
+}
+
+.time-sub {
+  color: rgb(75, 75, 75);
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: bold;
+}
+
+.info-child {
+  height: 130px;
+  padding-right: 30px;
+  border-right: 1px solid rgb(202, 202, 202);
+}
+
+.para {
+  color: grey;
+  font-family: Inter;
+  font-size: 15px;
+  padding-top: 10px;
+  margin-top: 15px;
+  text-align: right;
+  line-height: 20px;
+}
+
+.more {
+  color: rgb(75, 75, 75);
+  background-color: rgb(233, 232, 232);
+  text-decoration: none;
+  font-family: Inter;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin: 15px 30px 0 0;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+/* hover */
+
+.info-one:hover .info-child {
+  background-color: rgb(219, 219, 219);
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+
+.container-child:hover .info-one {
+  text-align: left;
+  margin-left: 250px;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-child:hover .info-one .more {
+  color: #fff;
+  background-color: rgb(158, 109, 45);
+  transition: all 0.5s ease-out;
+}
+
+.container-child:hover .info-one .time {
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+
+.container-child:hover .info-one .info-child {
+  background-color: rgb(241, 241, 241);
+  border-right: none;
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+}
+
+/* img */
+
+.img-big {
+  width: 400px;
+  position: absolute;
+  top: 30px;
+  left: 900px;
+}
+
+/* background image */
+.background-image {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-image: url("https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -680px;
+  left: 570px;
+}
+
+.background-color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(93, 93, 93);
+  width: 90%;
+  height: 90%;
+}
+
+.background-color h1,
+.background-color p {
+  background-image: url("https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background-color h1 {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  font-family: InterBold;
+  font-size: 60px;
+}
+
+.background-color p {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  font-family: InterBold;
+  font-size: 12px;
+}
