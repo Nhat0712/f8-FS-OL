@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(1, 8, 18, 0.775);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+}
+.box-1 {
+  z-index: 3;
+  border-top: 100px solid transparent;
+  border-right: 200px solid rgb(147, 64, 64);
+  border-bottom: 100px solid rgb(147, 64, 64);
+  border-left: 200px solid transparent;
+  position: absolute;
+  top: 320px;
+  transition: all 0.3s ease-in;
+}
+
+.box-2 {
+  z-index: 2;
+  border-top: 100px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 100px solid rgb(148, 57, 57);
+  border-left: 200px solid rgb(148, 57, 57);
+  position: absolute;
+  top: 320px;
+  transition: all 0.3s ease-in;
+}
+
+.box-3 {
+  z-index: 1;
+  border-top: 100px solid rgb(135, 50, 50);
+  border-right: 200px solid rgb(135, 50, 50);
+  border-bottom: 100px solid rgb(135, 50, 50);
+  border-left: 200px solid rgb(135, 50, 50);
+  position: absolute;
+  top: 320px;
+  transition: all 0.3s ease-in;
+}
+
+.box-4 {
+  z-index: 1;
+  border-top: 100px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 100px solid rgb(135, 50, 50);
+  border-left: 200px solid transparent;
+  position: absolute;
+  top: 320px;
+  transition: all 0.3s ease-in;
+}
+
+.box-5 {
+  z-index: 0;
+  opacity: 0;
+  width: 300px;
+  height: 90px;
+  background-color: #fff;
+  position: absolute;
+  top: 430px;
+  transition: all 1s ease-out 0.1s;
+}
+
+/* make up */
+.makeup-1 {
+  width: 150px;
+  height: 20px;
+  background-color: rgb(114, 37, 37);
+  margin: 10px 5px;
+}
+
+.makeup-2 {
+  width: 120px;
+  height: 20px;
+  background-color: rgb(114, 37, 37);
+  margin: 10px 5px;
+}
+.makeup-3 {
+  width: 100px;
+  height: 20px;
+  background-color: rgb(114, 37, 37);
+  margin: 10px 5px;
+}
+
+.makeup-4 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(114, 37, 37);
+  margin-left: 230px;
+  border-radius: 50%;
+}
+
+/* shadow */
+
+.shadow {
+  width: 250px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.603);
+  border-radius: 60%;
+  position: absolute;
+  filter: blur(10px);
+  top: 550px;
+  transition: all 0.3s ease-in;
+}
+/* hover */
+.item:hover .box-1,
+.item:hover .box-2,
+.item:hover .box-3 {
+  top: 350px;
+}
+
+.item:hover .box-4 {
+  top: 150px;
+}
+
+.item:hover .box-5 {
+  opacity: 1;
+  z-index: 1;
+  top: 220px;
+  height: 250px;
+}
+
+.item:hover .shadow {
+  top: 580px;
+  width: 380px;
+}
+
+/* Phùng Giang */
+.PG a {
+  background-color: burlywood;
+  font-family: serif;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.PG {
+  position: relative;
+  top: -30px;
+  left: 15px;
+}
