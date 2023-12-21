@@ -94,18 +94,6 @@ h1 {
   right: 0;
 }
 
-.box-message {
-  background-color: #fff;
-  font-family: Inter;
-  color: rgb(77, 77, 77);
-  border: 1px solid grey;
-  border-radius: 5px;
-  margin-left: 20px;
-  position: absolute;
-  top: 170px;
-  left: 0;
-}
-
 #selecter {
   background-color: #fff;
   font-family: Inter;
@@ -151,8 +139,7 @@ h1 {
 #first-name:focus,
 #last-name:focus,
 #email:focus,
-#selecter:focus,
-#message {
+#selecter:focus {
   border: none;
   outline: 0;
 }
@@ -160,8 +147,7 @@ h1 {
 /* focus */
 .box-first-name:focus-within .para-btn,
 .box-last-name:focus-within .para-btn,
-.box-email:focus-within .para-btn,
-.box-message:focus-within .para-btn {
+.box-email:focus-within .para-btn {
   font-size: 15px;
   top: 5px;
 }
@@ -174,6 +160,7 @@ h1 {
   top: 25px;
   left: 15px;
 }
+
 /* btn send */
 
 .send {
@@ -188,3 +175,5 @@ h1 {
   position: relative;
   top: 360px;
 }
+
+/* text area */

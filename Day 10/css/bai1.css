@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: robotobold;
+  src: url(../font/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: robotolight;
+  src: url(../font/Roboto-Light.ttf);
+}
+
+body {
+  background-color: rgb(77, 179, 243);
+  position: relative;
+  overflow: hidden;
+}
+
+/* phần background */
+.background {
+  color: #fff;
+  position: absolute;
+  top: 250px;
+  left: 800px;
+  text-align: right;
+}
+
+.head-backgr {
+  font-size: 50px;
+  font-family: robotobold;
+}
+
+.para-backgr {
+  font-family: robotolight;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.para-special {
+  font-size: 30px;
+}
+
+/* phần show-hidden */
+
+.hidden {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-menu {
+  font-size: 30px;
+  color: rgb(77, 179, 243);
+  margin: 25px;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.3 ease-in 0.5s;
+  opacity: 1;
+  z-index: 1;
+}
+
+.list {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 100px 0;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+
+.btn-arrow {
+  font-size: 30px;
+  color: rgb(77, 179, 243);
+  margin: 25px;
+  display: inline-block;
+  transform: rotate(-180deg);
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+ul {
+  display: none;
+  transition: all 0.1s ease-in;
+}
+
+ul li {
+  width: 150px;
+  list-style-type: none;
+}
+
+ul li a {
+  padding: 5px 30px 5px 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 13px;
+  font-family: robotobold;
+  color: rgb(77, 179, 243);
+  text-decoration: none;
+  display: inline-block;
+}
+
+input[id="menu"]:checked ~ .btn-menu {
+  opacity: 0;
+}
+
+input[id="menu"]:checked ~ .list .btn-arrow {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.list ul li a:focus {
+  color: black;
+  background-color: rgb(222, 222, 222);
+}
+
+input[id="menu"]:checked ~ .list ul {
+  display: block;
+}
+
+input[id="menu"]:checked ~ .list {
+  width: 100%;
+  height: 1000px;
+}
