@@ -355,18 +355,29 @@ input[id="remember"]:checked ~ label > .icon-hidden {
   justify-content: center;
   gap: 12px;
 }
+
 .outer-fb a,
 .outer-tw a,
 .outer-twch a,
 .outer-ytb a {
   color: #ffffff;
-  font-size: 6px;
+  font-size: 20px;
   width: 40px;
   height: 40px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.outer-fb a:hover,
+.outer-tw:hover a,
+.outer-twch:hover a,
+.outer-ytb:hover a {
+  top: -10px;
 }
 
 .outer-fb a {
