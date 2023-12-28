@@ -144,12 +144,14 @@ input[type="radio"]:checked + label {
   right: -753px;
   box-shadow: 0 0 30px 10px rgba(199, 199, 199, 0.186);
   opacity: 0;
+  z-index: 0;
   transition: all 0.5s ease;
 }
 
 input[id="login"]:checked ~ .hidden-login {
   right: -553px;
   opacity: 1;
+  z-index: 10;
 }
 
 .hidden-login img {
@@ -399,12 +401,14 @@ input[id="remember"]:checked ~ label > .icon-hidden {
   border-radius: 12px;
   box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
   opacity: 0;
+  z-index: 0;
   transition: all 0.5s ease;
 }
 
 input[id="register"]:checked ~ .hidden-register {
   right: -553px;
   opacity: 1;
+  z-index: 10;
 }
 
 .hidden-register img {
