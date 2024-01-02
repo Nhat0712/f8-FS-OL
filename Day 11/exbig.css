@@ -760,7 +760,7 @@ input[id="bar"]:checked ~ .box-hidden .container-hiddens {
   height: 390px;
   padding: 50px 112px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .footer .info {
@@ -769,7 +769,11 @@ input[id="bar"]:checked ~ .box-hidden .container-hiddens {
   padding-top: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.foot-logo {
+  width: 30%;
 }
 
 .footer .info .foot-logo p {
@@ -785,6 +789,7 @@ input[id="bar"]:checked ~ .box-hidden .container-hiddens {
 /* footer company */
 
 .foot-company {
+  width: 20%;
   padding: 20px 13.5px 0;
 }
 .footer .info .foot-company h4 {
@@ -816,6 +821,7 @@ input[id="bar"]:checked ~ .box-hidden .container-hiddens {
 /* footer services */
 
 .foot-services {
+  width: 20%;
   padding: 20px 13.5px 0;
 }
 .footer .info .foot-services h4 {
@@ -846,6 +852,7 @@ input[id="bar"]:checked ~ .box-hidden .container-hiddens {
 
 /* foot contact */
 .foot-contact {
+  width: 30%;
   padding: 20px 0 0;
 }
 .foot-contact h4 {
