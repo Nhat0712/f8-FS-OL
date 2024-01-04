@@ -618,6 +618,7 @@ input[id="send"]:checked ~ label > .icon-hidden {
   }
 
   .information {
+    padding-top: 20px;
     position: relative;
     left: 0;
     right: 0;
