@@ -295,6 +295,10 @@ a {
     align-items: center;
     justify-content: center;
   }
+
+  .sidebar .heading {
+    margin-top: 20px;
+  }
   .sidebar .head-sidebar {
     width: 90vw;
     display: flex;
@@ -418,7 +422,7 @@ a {
     height: 35px;
   }
   .sidebar .nav {
-    width: 600px;
+    width: 500px;
     flex-direction: column;
     justify-content: flex-start;
   }
