@@ -151,7 +151,7 @@ a {
   column-gap: 18px;
   font-size: 1.6rem;
   font-weight: 600;
-  position: fixed;
+  position: sticky;
   bottom: 62px;
   cursor: pointer;
   z-index: 10px;
