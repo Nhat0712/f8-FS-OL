@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/variables.css" />
@@ -36,9 +40,44 @@
       <div class="wrapper-inner">
         <!-- Sidebar -->
         <aside class="sidebar">
-          <a href="#" class="logo-link">
-            <img src="./image/logo.svg" alt="" />
-          </a>
+          <!-- header-sidebar -->
+          <div class="head-sidebar">
+            <a href="#" class="logo-link">
+              <img src="./image/logo.svg" alt="" />
+            </a>
+            <input type="checkbox" id="menu" name="menu" hidden />
+            <label for="menu"><i class="fa-solid fa-bars"></i></label>
+
+            <!-- -------------------------- -->
+            <!-- bar-hidden -->
+            <div class="menu-hidden">
+              <form action="" class="search-form">
+                <img src="./icons/search.svg" alt="" class="icon" />
+                <input type="text" class="search" placeholder="Search store" />
+              </form>
+
+              <!-- navigation -->
+              <nav class="nav">
+                <a href="#" class="nav-link active">Products</a>
+                <a href="#" class="nav-link">Story</a>
+                <a href="#" class="nav-link">Manufacturing</a>
+                <a href="#" class="nav-link">Packaging</a>
+              </nav>
+
+              <!-- actions -->
+              <div class="actions">
+                <a href="#" class="action-link">
+                  <img src="./icons/cart.svg" alt="" class="action-icon" />
+                </a>
+                <a href="#" class="action-link">
+                  <img src="./icons/user.svg" alt="" class="action-icon" />
+                </a>
+              </div>
+            </div>
+            <!-- end bar-hidden -->
+
+            <!-- -------------------------- -->
+          </div>
           <h2 class="heading">Explore</h2>
           <!-- nav sidebar -->
           <nav class="nav">
@@ -109,52 +148,52 @@
 
         <!-- Main -->
         <main class="main">
-          <div class="wide">
+          <div class="wide img-main one">
             <img
               class="special-effect"
               src="https://images.unsplash.com/photo-1556005693-00fff02f134c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="tall">
+          <div class="tall img-main two">
             <img
               src="https://images.unsplash.com/photo-1580711508444-cbdb49025ecf?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="wide">
+          <div class="wide img-main three">
             <img
               class="special-effect"
               src="https://images.unsplash.com/photo-1583119912267-cc97c911e416?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="tall">
+          <div class="tall img-main four">
             <img
               src="https://images.unsplash.com/photo-1574184180347-527304c53004?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="tall">
+          <div class="tall img-main five">
             <img
               src="https://images.unsplash.com/photo-1583934555852-537536e49071?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="tall">
+          <div class="tall img-main six">
             <img
               src="https://images.unsplash.com/photo-1583934584129-0f9b9624cffd?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="wide">
+          <div class="wide img-main seven">
             <img
               class="special-effect"
               src="https://images.unsplash.com/photo-1580136579395-4bbb9ffdc4ca?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
           </div>
-          <div class="wide">
+          <div class="wide img-main eight">
             <img
               class="special-effect"
               src="https://images.unsplash.com/photo-1614247262098-76459e80e152?q=80&w=1941&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

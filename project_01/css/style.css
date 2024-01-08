@@ -45,6 +45,70 @@ a {
   flex-direction: column;
 }
 
+.sidebar .head-sidebar label {
+  display: none;
+  position: relative;
+}
+
+/* ---------------------------------- */
+/* hidden */
+.sidebar .head-sidebar .menu-hidden {
+  background-color: rgb(217, 217, 217);
+  width: 25%;
+  height: 400px;
+  padding: 15px;
+  border-radius: 6px;
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: -430px;
+  transition: all 0.3s ease-in-out;
+  flex-direction: column;
+}
+.sidebar .head-sidebar .menu-hidden .search-form input {
+  width: 100%;
+}
+
+.sidebar .head-sidebar .menu-hidden .nav {
+  height: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.sidebar .head-sidebar .menu-hidden .nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative;
+}
+.sidebar .head-sidebar .menu-hidden .nav a::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--black);
+  border-radius: 10px;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar .head-sidebar .menu-hidden .nav a:hover:after,
+.sidebar .head-sidebar .menu-hidden .nav a.active:after {
+  width: 100%;
+}
+
+.sidebar .head-sidebar .menu-hidden .actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* end hidden */
+/* ---------------------------------- */
 .sidebar .heading {
   margin-top: 60px;
   font-size: 3.2rem;
@@ -217,17 +281,6 @@ a {
 
 /* responsive */
 @media screen and (max-width: 1199px) {
-  .header {
-    display: none;
-  }
-  .sidebar {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .sidebar .heading {
-    display: none;
-  }
   .wrapper-inner {
     grid-template-areas:
       "sidebar sidebar sidebar sidebar sidebar"
@@ -235,5 +288,142 @@ a {
       "main main main main main"
       "main main main main main"
       "main main main main main";
+  }
+
+  /* sidebar responsive */
+  .sidebar {
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar .head-sidebar {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .sidebar .head-sidebar .logo-link {
+    margin-right: auto;
+  }
+
+  .sidebar .head-sidebar label {
+    background-color: #fff;
+    display: inline-flex;
+    font-size: 2rem;
+    padding: 5px 12px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    position: relative;
+    right: 0;
+    z-index: 10;
+  }
+
+  .chat-btn {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.37);
+    color: #fff;
+    padding: 0 10px 0 0;
+    border-radius: 30px;
+    position: fixed;
+    left: 35px;
+    justify-content: space-around;
+  }
+
+  /* hidden */
+  input[type="checkbox"]:checked ~ .menu-hidden {
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .sidebar .nav {
+    width: 90%;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    overflow: scroll;
+  }
+
+  .sidebar .heading {
+    font-size: 2.5rem;
+  }
+  /* header responsive */
+  .header {
+    display: none;
+  }
+  /* main responsive */
+  .main {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar .nav {
+    margin: 30px 0;
+    row-gap: 10px;
+  }
+  .main {
+    grid-template-columns: 2fr;
+  }
+
+  .main .wide,
+  .main .tall {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .sidebar .head-sidebar .menu-hidden {
+    width: 40%;
+  }
+
+  .chat-btn {
+    font-size: 1rem;
+  }
+  .chat-btn .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    grid-template-columns: 2fr;
+  }
+
+  .main .wide,
+  .main .tall {
+    grid-column: span 1;
+    grid-row: span 1.5;
+  }
+  .sidebar .head-sidebar .menu-hidden {
+    width: 60%;
+  }
+
+  .chat-btn {
+    font-size: 0.8rem;
+  }
+  .chat-btn .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sidebar .head-sidebar .menu-hidden {
+    width: 95%;
+  }
+  .main .wide,
+  .main .tall {
+    grid-column: span 0.5;
+    grid-row: span 1;
+  }
+
+  .chat-btn {
+    font-size: 0.9rem;
+  }
+  .chat-btn .icon {
+    width: 30px;
+    height: 30px;
   }
 }
