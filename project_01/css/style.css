@@ -372,6 +372,7 @@ a {
   }
   .main {
     grid-template-columns: 2fr;
+    margin-bottom: 30px;
   }
 
   .main .wide,
@@ -400,6 +401,7 @@ a {
 @media screen and (max-width: 767px) {
   .main {
     grid-template-columns: 2fr;
+    margin-bottom: 30px;
   }
 
   .main .wide,
@@ -426,6 +428,11 @@ a {
   .sidebar .head-sidebar .menu-hidden {
     width: 55%;
   }
+
+  .main {
+    margin-bottom: 30px;
+  }
+
   .main .wide,
   .main .tall {
     grid-column: span 0.5;
