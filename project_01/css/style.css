@@ -95,8 +95,7 @@ a {
   transition: width 0.3s ease-in-out;
 }
 
-.sidebar .head-sidebar .menu-hidden .nav a:hover:after,
-.sidebar .head-sidebar .menu-hidden .nav a.active:after {
+.sidebar .head-sidebar .menu-hidden .nav a:hover:after {
   width: 100%;
 }
 
@@ -335,7 +334,8 @@ a {
     opacity: 1;
   }
   .sidebar .nav {
-    width: 90%;
+    width: 800px;
+    height: 100px;
     margin: 30px 0;
     align-items: center;
     justify-content: center;
@@ -343,6 +343,9 @@ a {
     flex-wrap: wrap;
     row-gap: 10px;
     overflow: scroll;
+  }
+  .sidebar .nav .nav-item {
+    width: 150px;
   }
 
   .sidebar .heading {
@@ -387,6 +390,10 @@ a {
     width: 40px;
     height: 40px;
   }
+
+  .sidebar .nav {
+    width: 800px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -407,6 +414,11 @@ a {
     width: 35px;
     height: 35px;
   }
+  .sidebar .nav {
+    width: 600px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -425,5 +437,10 @@ a {
   .chat-btn .icon {
     width: 30px;
     height: 30px;
+  }
+  .sidebar .nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
