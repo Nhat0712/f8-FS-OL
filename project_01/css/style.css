@@ -20,6 +20,7 @@ a {
 }
 .wrapper {
   max-width: 100%;
+  overflow: hidden;
 }
 
 .wrapper-inner {
