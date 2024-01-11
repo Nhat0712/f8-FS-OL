@@ -56,15 +56,15 @@ a {
 .sidebar .head-sidebar .menu-hidden {
   background-color: rgb(217, 217, 217);
   width: 25%;
-  height: 300px;
+  height: 0;
   padding: 15px;
   border-radius: 6px;
-  display: none;
   position: absolute;
   right: 0;
-  bottom: -330px;
-  transition: all 0.3s ease-in-out;
+  bottom: 0px;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 .sidebar .head-sidebar .menu-hidden .search-form input {
   width: 100%;
@@ -337,7 +337,10 @@ a {
   input[type="checkbox"]:checked ~ .menu-hidden {
     display: flex;
     transform: translateX(0);
+    bottom: -325px;
     opacity: 1;
+    height: 300px;
+    padding: 15px;
   }
   .sidebar .nav {
     width: 800px;
